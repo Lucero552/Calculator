@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LP Transportation Method (NWCM)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>LP Transportation Method (NWCM)</h1>
+  
+  <div id="input-section">
+    <h2>Enter the Supply, Demand, and Cost Data</h2>
+    
+    <div class="input-group">
+      <label for="supply">Supply (comma-separated, e.g. "20, 30, 25"):</label>
+      <input type="text" id="supply" placeholder="Enter supply values">
+    </div>
+    
+    <div class="input-group">
+      <label for="demand">Demand (comma-separated, e.g. "30, 25, 20"):</label>
+      <input type="text" id="demand" placeholder="Enter demand values">
+    </div>
+    
+    <div class="input-group">
+      <label for="costMatrix">Supply Cost (comma-separated, e.g. "8, 6, 10; 9, 7, 4"):</label>
+      <input type="text" id="costMatrix" placeholder="Enter cost matrix values">
+    </div>
+    
+    <button onclick="solveTransportation()">Solve</button>
+  </div>
+
+  <div id="result"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+/* General body styling */
+body {
+  background-image: url(https://i.pinimg.com/736x/a8/59/f3/a859f3738e1f68b5672df1274ec647b5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: #f5f5f5; /* Light text color for better contrast */
+  text-align: center;
+}
+
+/* Header styling */
+h1 {
+  background: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+  color: #ffffff; /* White text for contrast */
+  padding: 15px 0;
+  margin: 0;
+  font-size: 1.8rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Input Section */
+#input-section {
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent dark background */
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px auto;
+  width: 350px; /* Fixed width for the container */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  color: #f5f5f5; /* White text color for labels */
+  text-align: left;
+}
+
+/* Label styling */
+label {
+  display: block;
+  font-size: 0.9rem; /* Smaller font for labels */
+  margin-bottom: 6px; /* Reduced margin */
+  color: #f5f5f5;
+}
+
+/* Input fields styling */
+input[type="text"], input[type="number"] {
+  width: 100%; /* Ensure input fields take full width of the container */
+  padding: 10px; /* Reduced padding for smaller inputs */
+  font-size: 0.8rem; /* Smaller text size */
+  border-radius: 5px; /* Smaller border radius */
+  border: 1px solid #ddd;
+  background-color: #fff;
+  color: #333;
+  margin-bottom: 12px; /* Reduced space between inputs */
+  box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+/* Input focus effect */
+input[type="text"]:focus, input[type="number"]:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Button Styling */
+button {
+  background: #007bff;
+  color: #ffffff;
+  padding: 8px 12px; /* Smaller padding for the button */
+  border: none;
+  border-radius: 5px; /* Smaller border radius */
+  cursor: pointer;
+  font-size: 0.9rem; /* Smaller font size */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: auto; /* Adjust the width to auto */
+  margin: 15px auto; /* Auto margin for centering */
+  display: block; /* Make button a block element to allow centering */
+}
+
+button:hover {
+  background: #0056b3;
+  transform: scale(1.05); /* Subtle scale effect on hover */
+}
+
+/* Result Section */
+#result {
+  margin: 20px auto;
+  width: 80%;
+  background: rgba(255, 255, 255, 0.9); /* White with slight transparency */
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #333; /* Dark text for readability */
+  text-align: left;
+}
+
+/* Responsive design for smaller devices */
+@media (max-width: 768px) {
+  #input-section {
+      width: 90%; /* Full width for smaller screens */
+  }
+
+  button {
+      font-size: 0.85rem; /* Smaller font size on smaller screens */
+      width: 100%; /* Button takes full width on small screens */
+  }
+
+  input[type="text"] {
+      font-size: 0.9rem;
+      width: 100%; /* Full width for smaller screens */
+  }
+}
